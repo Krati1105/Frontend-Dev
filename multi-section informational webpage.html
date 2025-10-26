@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-section informational webpage</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        body{
+            line-height:1.6;
+        }
+
+        header{
+            background-color:white;
+            color:black;
+            padding:1rem 5%;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:2.5rem;
+            font-weight:700;
+        }
+
+        nav{
+            background-color: blueviolet;
+            display:flex;
+            justify-content:center;
+            padding:0.5rem ;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 1.5rem;
+            font-weight:600;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        main section{
+            padding: 4% 5%;
+            margin-bottom:1rem;
+            color:white;
+            border:2px solid #ddd;
+        }
+
+        #overview{
+            background-color: pink;
+        }
+ 
+        #history{
+            background:linear-gradient(to right,rgb(198, 144, 198),pink);
+        }
+
+        #attraction{
+            background:radial-gradient(circle,#3498db,#2c3e50);
+        }
+
+        #gallery{
+            background-color: rgb(161, 113, 161);
+            background-image: url('https://via.placeholder.com/1200x400'); 
+            background-size:contain;
+            background-position: center;
+        }
+
+        main section h2{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        main section p{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+        footer{
+            background-color: #2c3e50;
+            color:white;
+            text-align: center;
+            padding:1rem 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Paris</h1>
+    </header>
+
+    <nav>
+        <a href="overview">Overview</a>
+        <a href="#history">History</a>
+        <a href="#attraction">Attraction</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>
+                Paris has a rich history dating back to the 3rd century BC. It has witnessed revolutions, royal dynasties, and has been a hub for intellectual and artistic movements.
+            </p>
+        </section>
+
+        <section id="history">
+            <h2>History</h2>
+            <p>Paris has a rich history dating back to the 3rd century BC. It has witnessed revolutions, royal dynasties, and has been a hub for intellectual and artistic movements.</p>
+        </section>
+
+        <section id="attraction">
+            <h2>Attraction</h2>
+            <p>
+                The Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and Montmartre are among the most iconic attractions of Paris.
+            </p>
+        </section>
+
+         <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Explore stunning views of Paris through its streets, landmarks, and vibrant lifestyle.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 Krati Agrawal. All rights reserved.
+    </footer>
+</body>
+</html>

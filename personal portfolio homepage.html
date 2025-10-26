@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio homepage</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        header{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background-color: dark blue;
+            color:light text;
+            /* display:flex; */
+            justify-content:space-between;
+            align-items:center;
+            padding:1rem 2%;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index:1000;
+        }
+
+        header h1{
+            font-size:1rem;
+        }
+
+        nav a{
+            color:blueviolet;
+            text-decoration:none;
+            margin-left:1.5em;
+            font-size:1rem;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            margin-top:100px;
+            padding:2% 5%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+            min-height:80vh;
+            background-color: #f0f0f0;
+            color:#333333;
+        }
+
+        main img{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+
+        main p{
+            font-size:1.2em;
+            max-width:600px;;
+        }
+
+        footer{
+            background-color: #1e3d59;
+            color:#f5f5f5;
+            text-align:center;
+            padding:1rem 2%;
+            position:relative;
+            bottom:0;
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Krati Agrawal</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+    <main>
+        <img src="https://via.placeholder.com/150" alt="Profile Image">
+        <p>
+            Hello! I'm Krati Agrawal, a frontend developer passionate about creating beautiful and functional web experiences. I enjoy turning ideas into reality using HTML, CSS, and JavaScript.
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2025 Krati Agrawal. All rights reserved.
+    </footer>
+</body>
+</html>
