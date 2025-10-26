@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset Layout</title>
+</head>
+<frameset rows="25%,75%">
+    <frame
+     name="topframe"
+     title="Navigation"
+     srcdoc='
+     <html>
+        <body>
+            <h3 align="center">Navigation Links</h3>
+            <p align="center">
+                <a href="#Home" target="bottomFrame">Home</a> |
+                <a href="#about" target="bottomFrame">About</a> |
+                <a href="#contact" target="bottomFrame">Contact</a>
+            </p>
+        </body>
+     </html>
+     '>
+    </frame>
+
+    <frame 
+      name="bottomFrame"
+      title="Main Content"
+      srcdoc='
+       <html>
+            <body>
+                <h2 align="center">Welcome to My Website</h2>
+            </body>
+            </html>'>
+        </frame>
+</frameset>
+</html>
