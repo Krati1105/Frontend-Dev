@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Section</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: #f7f7f7;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pricing-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            width: 100%;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Pricing Card */
+        .card{
+            background: white;
+            width: 270px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 12px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* Larger Middle Card */
+        .featured{
+            width: 300px;
+            background: #4C88FF;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .card h3{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .price{
+            font-size: 40px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive: Stack Vertically */
+        @media(max-width: 750px){
+            .pricing-container{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="pricing-container">
+
+        <div class="card">
+            <h3>Basic</h3>
+            <div class="price">$9</div>
+            <p>One User Access</p>
+            <p>Email Support</p>
+        </div>
+
+        <div class="card featured">
+            <h3>Premium</h3>
+            <div class="price">$19</div>
+            <p>Multi-User Access</p>
+            <p>Priority Support</p>
+        </div>
+
+        <div class="card">
+            <h3>Pro</h3>
+            <div class="price">$29</div>
+            <p>Unlimited Access</p>
+            <p>24/7 Support</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
