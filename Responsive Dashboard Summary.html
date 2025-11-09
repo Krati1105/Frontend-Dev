@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Dashboard Summary</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: #f0f2f5;
+    }
+
+    .dashboard{
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "sidebar main";
+        grid-template-columns: 220px auto;
+        min-height: 100vh;
+        animation: fadeIn 1.2s ease;
+    }
+
+    header{
+        grid-area: header;
+        background: #283593;
+        color: white;
+        padding: 20px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    aside{
+        grid-area: sidebar;
+        background: #3949ab;
+        color: white;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    main{
+        grid-area: main;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card{
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn{
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 750px){
+        .dashboard{
+            grid-template-areas: 
+                "sidebar"
+                "header"
+                "main";
+            grid-template-columns: 1fr;
+        }
+        main{
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <header>Responsive Dashboard Summary</header>
+
+    <aside>
+        Sidebar Navigation
+    </aside>
+
+    <main>
+        <div class="card">Filters</div>
+        <div class="card">Typography</div>
+        <div class="card">Media Queries</div>
+        <div class="card">Cheat Sheet Links</div>
+    </main>
+
+</div>
+
+</body>
+</html>
