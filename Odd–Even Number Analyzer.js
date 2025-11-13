@@ -1,0 +1,17 @@
+let numbers = [];
+for (let i = 1; i <= 30; i++) {
+    numbers.push(i);
+}
+
+let results = [];
+
+for (let num of numbers) {
+    if (num % 3 === 0 && num % 5 === 0) results.push("FizzBuzz");
+    else if (num % 2 === 0) results.push("Even");
+    else results.push("Odd");
+}
+
+console.log("------ Odd–Even Number Analyzer ------");
+console.log("Numbers:", numbers.join(", "));
+console.log("Results:", results.join(", "));
+console.log("--------------------------------------");
